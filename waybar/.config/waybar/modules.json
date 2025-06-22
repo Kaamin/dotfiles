@@ -17,6 +17,22 @@
 		},
 	},
 
+  // taskbar
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "all-outputs": false,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+	    "wofi",
+	    "rofi",
+	    "kitty",
+       "kitty-dropterm"
+	  ],
+  },
+
   // clock
 	"clock": {  
 		"interval": 1,
@@ -60,7 +76,8 @@
 	// system
 	"custom/system": {
 		"format": "<span size='small'> 󰣇 </span>",
-		"tooltip": false
+		"tooltip": false,
+    "on-click": "pgrep rofi >/dev/null 2>&1 && killall rofi || rofi -show drun" 
 	},
 	
 	// CPU
@@ -88,7 +105,21 @@
 		"format": "  {}% ",
 		"on-click": "kitty btop"
 	},
-	
+
+	// audio slider
+	"group/audio": {
+		"orientation": "inherit",
+		"drawer": {
+			"transition-duration": 300,
+			"children-class": "not-memory",
+			"transition-left-to-right": false
+		},        
+		"modules": [
+      "pulseaudio",
+			"pulseaudio/slider"
+		]
+	},
+		
 	// audio
 	"pulseaudio": {
 		"scroll-step": 1,
@@ -107,6 +138,13 @@
 		"on-click": "pavucontrol"
 	},
 	
+  // audio slider
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+
 	// bluetooth
 	"bluetooth": {
 		"format": " {status}",

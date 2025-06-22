@@ -69,8 +69,7 @@ window#waybar {
 }
 
 #taskbar button:hover {
-    background: @taskbar-hover
-    ;
+    background: @taskbar-hover;
     opacity: 1;
     border: none;
     box-shadow: none;
@@ -122,13 +121,43 @@ tooltip label {
 }
 
 /* audio */
+
+#pulseaudio-slider {
+    min-height: 16px;
+    min-width: 100px;
+    padding: 0px 8px 0px 0px;
+    
+}
+  
+#pulseaudio-slider slider {
+    min-height: 16px;
+    min-width: 4px;
+    opacity: 1;
+    background-color: @text;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 16px;
+    min-width: 0px;
+    border-radius: 5px;
+    background-color: @taskbar;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 0px;
+    border-radius: 4px;
+    background-color: @workspace-color;
+}
+
 #pulseaudio {
     background-color: @workspace-color; 
     font-size: 16px;
     color: @text;
     border-radius: 5px;
     padding: 1px 10px 0px 10px;
-    margin: 4px 1px 4px -15px;
+    margin: 4px 1px 4px 2px;
     opacity: 0.9;
 }
 
