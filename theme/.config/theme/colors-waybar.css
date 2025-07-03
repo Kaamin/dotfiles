@@ -1,27 +1,28 @@
 /* color definitions for waybar */
 
 /* normal */
-@define-color color0 #1d202f;  
-@define-color color1 #f7768e; 
-@define-color color2 #9ece6a; 
-@define-color color3 #e0af68;
-@define-color color4 #7aa2f7; 
-@define-color color5 #bb9af7;
-@define-color color6 #7dcfff;
-@define-color color7 #a9b1d6; 
+@define-color color0 #1d202f;  /* white */ 
+@define-color color1 #f7768e;  /* red */
+@define-color color2 #9ece6a;  /* green */
+@define-color color3 #e0af68;  /* yellow */
+@define-color color4 #7aa2f7;  /* blue */
+@define-color color5 #bb9af7;  /* magenta, taskbar hover in waybar */
+@define-color color6 #7dcfff;  /* cyan */
+@define-color color7 #a9b1d6;  /* white */
 
 /* bright */
-@define-color color8 #414868;  
-@define-color color9 #f7768e; 
-@define-color color10 #9ece6a;
-@define-color color11 #e0af68;
-@define-color color12 #7aa2f7;
-@define-color color13 #bb9af7; 
-@define-color color14 #7dcfff;
-@define-color color15 #c0caf5;
+@define-color color8 #414868;  /* dark grey */
+@define-color color9 #f7768e;  /* */
+@define-color color10 #9ece6a; /* */
+@define-color color11 #e0af68; /* */
+@define-color color12 #7aa2f7; /* */
+@define-color color13 #bb9af7; /* */
+@define-color color14 #7dcfff; /* */
+@define-color color15 #c0caf5; /* light grey, text in waybar */
 
 /* extended colors */
-@define-color color16 #ff9e64;
-@define-color color17 #db4b4b;
-@define-color color18 rgba(53, 9, 87, 0.4);
-@define-color color19 #35377c; 
+@define-color color16 #ff9e64; /* */
+@define-color color17 #db4b4b; /* */
+@define-color color18 rgba(53, 9, 87, 0.4); /* tooltip background in waybar*/
+@define-color color19 #35377c; /* selected highlight in waybar*/
+@define-color color20 rgba(200, 200, 200, 0.2); /* taskbar background in waybar */
